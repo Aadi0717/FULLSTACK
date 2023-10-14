@@ -1,0 +1,87 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #de0000;
+    text-align: center;
+}
+.parallax1 {
+    background-image: url("https://hdqwalls.com/wallpapers/futuristic-city-cyberpunk-neon-street-digital-art-4k-f5.jpg");
+    min-height: 100vh;
+}
+
+.parallax2 {
+    background-image: url("https://images.hdqwalls.com/wallpapers/neon-city-cyber-bike-sq.jpg");
+    min-height: 60vh;
+}
+
+.parallax3 {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/285/471/731/night-cyberpunk-futuristic-city-artwork-wallpaper-18561dd890a0fc28903c118ea8f294ba.jpg");
+    min-height: 40vh;
+}
+
+.parallax4 {
+    background-image: url("https://www.pixel4k.com/wp-content/uploads/2020/01/neon-rainy-lights-cyberpunk_1578254593.jpg");
+    min-height: 100vh;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Important */
+}
+
+.head {
+    position: absolute;
+    color: #eeff01;
+    font-size: 5vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation: drop 3s ease; /* Make things beautiful */
+    cursor: pointer;
+}
+
+.head:hover {
+    color: transparent;
+}
+
+section {
+    overflow: auto;
+    padding: 50px 80px;
+}
+
+footer {
+    width: 100%;
+    background-color: #323232;
+    color: #7a3535;
+    height: 8vh;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+}
+
+@media (max-width: 800px) {
+    .head {
+        font-size: 2vw;
+    }
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu'); /* IMPORTANT */
